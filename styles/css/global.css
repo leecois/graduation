@@ -1,0 +1,152 @@
+/* GLOBAL CSS FILE - Contains global styles that shouldn't be reset */
+
+html {
+  --scrollbar-gutter: 0px;
+  scrollbar-gutter: stable; /* This is needed to prevent the scrollbar from jumping */
+
+  &.lenis-stopped {
+    --scrollbar-gutter: var(--scrollbar-width);
+  }
+}
+
+html.overflow-hidden {
+  overflow: hidden;
+  touch-action: none;
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* Hide native scrollbar on mobile while keeping scrolling enabled */
+@media (max-width: 799px) {
+  * {
+    scrollbar-width: none;
+  }
+
+  *::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+  *::-webkit-scrollbar-track,
+  *::-webkit-scrollbar-thumb {
+    display: none;
+    background: transparent;
+  }
+}
+
+body {
+  min-height: 100vh;
+  overscroll-behavior: none;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection styling */
+*::selection {
+  background-color: var(--color-contrast);
+  color: var(--color-primary);
+}
+
+/* SVG icon colors */
+svg.icon {
+  path[fill],
+  rect[fill],
+  circle[fill] {
+    fill: currentColor;
+  }
+  path[stroke],
+  rect[stroke],
+  circle[stroke] {
+    stroke: currentColor;
+  }
+}
+
+/* Hover states */
+.link {
+  @media (--hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.contact {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: color 0.5s var(--ease-out-cubic);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.5;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-contrast);
+    transform: translateX(-100%);
+    transition: transform 0.5s var(--ease-out-cubic);
+    z-index: -1;
+  }
+
+  @media (--hover) {
+    &:hover::before,
+    &:focus-visible::before {
+      transform: translateX(0);
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-primary);
+    }
+  }
+}
+
+/* Focus states */
+*:focus-visible {
+  outline: 2px solid var(--color-contrast);
+}
+
+html.scrollbar-grabbing,
+img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+html.screenshot {
+  *:not(:has(canvas), canvas, :has(#orchestra), #orchestra, #orchestra *) {
+    /* biome-ignore lint: it's all good */
+    opacity: 0 !important;
+  }
+}
+
+.texture {
+  will-change: transform;
+  z-index: 0;
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  background-image: url(https://khanh.me/api/media/file/614f353f1e11a6a7afdd8b74_6059a3e2b9ae6d2bd508685c_pt-texture-2.jpg);
+  background-position: 50%;
+  background-size: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

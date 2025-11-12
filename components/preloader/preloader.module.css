@@ -1,0 +1,46 @@
+.countWrapper {
+  width: mobile-vw(180);
+  height: mobile-vh(360);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media (min-width: 800px) {
+  .countWrapper {
+    width: desktop-vw(180);
+    height: desktop-vh(360);
+  }
+}
+
+.count {
+  height: mobile-vh(360);
+  transform: translateX(mobile-vw(-1080));
+}
+
+@media (min-width: 800px) {
+  .count {
+    height: desktop-vh(360);
+    transform: translateX(desktop-vw(-1080));
+  }
+}
+
+.digit {
+  width: mobile-vw(180);
+  height: mobile-vh(360);
+}
+
+@media (min-width: 800px) {
+  .digit {
+    width: desktop-vw(180);
+    height: desktop-vh(360);
+  }
+}
+
+.digit h1 {
+  font-size: mobile-vw(360);
+}
+
+@media (min-width: 800px) {
+  .digit h1 {
+    font-size: desktop-vw(360);
+  }
+}
