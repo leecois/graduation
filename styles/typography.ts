@@ -12,7 +12,7 @@ const typography: TypeStyles = {
     'font-weight': 400,
     'line-height': '120%',
     'letter-spacing': '.0em',
-    'font-size': { mobile: 48, desktop: 199 },
+    'font-size': { mobile: 42, desktop: 173 },
   },
   caption: {
     'font-family': `var(${fonts.mono})`,
@@ -46,7 +46,7 @@ const typography: TypeStyles = {
     'line-height': { mobile: '100%', desktop: '95%' },
     'letter-spacing': { mobile: '0.03em', desktop: '0.015em' },
     'font-feature-settings': `"ss04"`,
-    'font-size': { mobile: 43, desktop: 67 },
+    'font-size': { mobile: 50, desktop: 72 },
   },
   contact: {
     'font-family': `var(${fonts.mono})`,

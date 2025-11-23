@@ -8,8 +8,8 @@ import '~/styles/css/index.css'
 import { fontsVariable } from '~/styles/fonts'
 
 const APP_NAME = AppData.name
-const APP_DEFAULT_TITLE = 'Lễ Tốt Nghiệp của Khánh'
-const APP_TITLE_TEMPLATE = '%s - Lễ Tốt Nghiệp của Khánh'
+const APP_DEFAULT_TITLE = 'Graduation Ceremony'
+const APP_TITLE_TEMPLATE = '%s - Graduation Ceremony'
 const APP_DESCRIPTION = AppData.description
 const APP_BASE_URL =
   process.env.NEXT_PUBLIC_BASE_URL ?? 'https://localhost:3000'
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
     languages: {
-      'vi-VN': '/vi-VN',
+      'en-US': '/en-US',
     },
   },
   appleWebApp: {
@@ -51,9 +51,8 @@ export const metadata: Metadata = {
         alt: APP_DEFAULT_TITLE,
       },
     ],
-    locale: 'vi_VN',
+    locale: 'en_US',
   },
-  authors: [{ name: 'Khanh Le Quoc', url: 'https://khanh.me' }],
 }
 
 export const viewport: Viewport = {
@@ -64,7 +63,7 @@ export const viewport: Viewport = {
 export default async function Layout({ children }: PropsWithChildren) {
   return (
     <html
-      lang="vi"
+      lang="en"
       dir="ltr"
       className={fontsVariable}
       suppressHydrationWarning

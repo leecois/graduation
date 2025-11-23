@@ -1,4 +1,4 @@
-# Khanh's Graduation Invitation
+# Graduation Invitation Template
 
 A single–page graduation invitation that focuses on cinematic typography, fluid motion, and clear event details. The layout is responsive from day one and feels tactile thanks to custom textures and smooth scrolling.
 

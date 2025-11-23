@@ -15,7 +15,7 @@ export default function manifest(): MetadataRoute.Manifest {
         type: 'image/png',
       },
     ],
-    name: 'Lễ Tốt Nghiệp của Khánh',
+    name: 'Graduation Ceremony',
     description: AppData.description,
     start_url: '/',
     theme_color: '#181423',
