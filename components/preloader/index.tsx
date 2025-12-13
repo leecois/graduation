@@ -98,8 +98,8 @@ export function Preloader({ onComplete, className }: PreloaderProps) {
     if (countElements.length > 0) {
       tl.to(countElements, {
         x: initialXPosition,
-        duration: 0.85,
-        delay: 0.5,
+        duration: 0.6,
+        delay: 0.3,
         ease: 'power4.inOut',
       })
 
@@ -108,13 +108,13 @@ export function Preloader({ onComplete, className }: PreloaderProps) {
 
         tl.to(countElements, {
           x: xPosition,
-          duration: 0.85,
+          duration: 0.6,
           ease: 'power4.inOut',
           onStart: () => {
             if (countWrapperElements.length > 0) {
               const tween = gsap.to(countWrapperElements, {
                 x: stepDistance * i,
-                duration: 0.85,
+                duration: 0.7,
                 ease: 'power4.inOut',
               })
               animations.push(tween)
