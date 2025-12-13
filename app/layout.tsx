@@ -8,8 +8,8 @@ import '~/styles/css/index.css'
 import { fontsVariable } from '~/styles/fonts'
 
 const APP_NAME = AppData.name
-const APP_DEFAULT_TITLE = 'Graduation Ceremony'
-const APP_TITLE_TEMPLATE = '%s - Graduation Ceremony'
+const APP_DEFAULT_TITLE = 'Lễ Tốt Nghiệp của Châu'
+const APP_TITLE_TEMPLATE = '%s - Lễ Tốt Nghiệp của Châu'
 const APP_DESCRIPTION = AppData.description
 const APP_BASE_URL =
   process.env.NEXT_PUBLIC_BASE_URL ?? 'https://localhost:3000'

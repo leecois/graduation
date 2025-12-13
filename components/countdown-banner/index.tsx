@@ -66,28 +66,28 @@ export function CountdownBanner({
       <div className="col-start-1 flex flex-col coi-gap-10">
         <RotateRevealText as="div" className="text-primary uppercase time">
           {formatNumber(timeLeft.days)}
-          <span className="text-primary/40">Days</span>
+          <span className="text-primary/40">Ngày</span>
         </RotateRevealText>
       </div>
 
       <div className="dt:col-start-3 col-start-2 dt:items-end flex flex-col coi-gap-10">
         <RotateRevealText as="div" className="text-primary uppercase time">
           {formatNumber(timeLeft.hours)}
-          <span className="text-primary/40">Hours</span>
+          <span className="text-primary/40">Giờ</span>
         </RotateRevealText>
       </div>
 
       <div className="col-start-3 dt:col-start-6 flex flex-col coi-gap-10 items-center">
         <RotateRevealText as="div" className="text-primary uppercase time">
           {formatNumber(timeLeft.minutes)}
-          <span className="text-primary/40">Minutes</span>
+          <span className="text-primary/40">Phút</span>
         </RotateRevealText>
       </div>
 
       <div className="col-start-4 dt:col-start-8 dt:justify-self-end justify-self-end coi-gap-10">
         <RotateRevealText as="div" className="text-primary uppercase time">
           {formatNumber(timeLeft.seconds)}
-          <span className="text-primary/40">Seconds</span>
+          <span className="text-primary/40">Giây</span>
         </RotateRevealText>
       </div>
     </div>

@@ -73,8 +73,8 @@
 	font-weight: 400;
 	line-height: 120%;
 	letter-spacing: .0em;
-	font-size: calc(((42 * 100) / var(--device-width)) * 1vw);
-	@variant dt { font-size: calc(((173 * 100) / var(--device-width)) * 1vw); }
+	font-size: calc(((48 * 100) / var(--device-width)) * 1vw);
+	@variant dt { font-size: calc(((199 * 100) / var(--device-width)) * 1vw); }
 }
 @utility caption {
   font-family: var(--next-font-mono);
@@ -115,8 +115,8 @@
 	letter-spacing: 0.03em;
 	@variant dt { letter-spacing: 0.015em; }
 	font-feature-settings: "ss04";
-	font-size: calc(((50 * 100) / var(--device-width)) * 1vw);
-	@variant dt { font-size: calc(((72 * 100) / var(--device-width)) * 1vw); }
+	font-size: calc(((43 * 100) / var(--device-width)) * 1vw);
+	@variant dt { font-size: calc(((67 * 100) / var(--device-width)) * 1vw); }
 }
 @utility contact {
   font-family: var(--next-font-mono);
