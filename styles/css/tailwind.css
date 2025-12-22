@@ -9,17 +9,17 @@
 	--breakpoint-dt: 800px;
 
   --color-*: initial;
-	--color-primary: oklch(0.8032 0.0161 67.6);
-	--color-secondary: oklch(0.23 0.0038 106.69);
-	--color-contrast: oklch(0.3 0 360);
-  --color-black: oklch(0.23 0.0038 106.69);
-	--color-white: oklch(1 0 360);
-	--color-gray: oklch(0.3 0 360);
-	--color-green: oklch(0.8689 0.2868 142.6042);
-	--color-gray90: oklch(0.9219 0 0);
-	--color-sage: oklch(0.8211 0.0785 143.5);
-	--color-slate: oklch(0.5412 0.0311 233.4);
-	--color-paper: oklch(0.8032 0.0161 67.6);
+	--color-primary: oklch(0.85 0.015 75);
+	--color-secondary: oklch(0.15 0.05 250);
+	--color-contrast: oklch(0.35 0.04 245);
+  --color-black: oklch(0.15 0.05 250);
+	--color-white: oklch(0.98 0.01 85);
+	--color-gray: oklch(0.4 0.02 240);
+	--color-green: oklch(0.55 0.12 200);
+	--color-gray90: oklch(0.92 0.01 80);
+	--color-sage: oklch(0.65 0.08 220);
+	--color-slate: oklch(0.35 0.04 245);
+	--color-paper: oklch(0.85 0.015 75);
     
   --spacing-*: initial;
 	--spacing-0: 0;
@@ -55,14 +55,14 @@
 
 /** Custom theme overwrites **/
 [data-theme=light] {
-  --color-primary: oklch(0.8032 0.0161 67.6);
-	--color-secondary: oklch(0.23 0.0038 106.69);
-	--color-contrast: oklch(0.3 0 360);
+  --color-primary: oklch(0.85 0.015 75);
+	--color-secondary: oklch(0.15 0.05 250);
+	--color-contrast: oklch(0.35 0.04 245);
 }
 [data-theme=dark] {
-  --color-primary: oklch(0.23 0.0038 106.69);
-	--color-secondary: oklch(1 0 360);
-	--color-contrast: oklch(0.3 0 360);
+  --color-primary: oklch(0.15 0.05 250);
+	--color-secondary: oklch(0.98 0.01 85);
+	--color-contrast: oklch(0.35 0.04 245);
 }
   
 

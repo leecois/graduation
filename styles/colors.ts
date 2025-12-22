@@ -1,12 +1,12 @@
 const colors = {
-  black: 'oklch(0.23 0.0038 106.69)',
-  white: 'oklch(1 0 360)',
-  gray: 'oklch(0.3 0 360)',
-  green: 'oklch(0.8689 0.2868 142.6042)',
-  gray90: 'oklch(0.9219 0 0)',
-  sage: 'oklch(0.8211 0.0785 143.5)',
-  slate: 'oklch(0.5412 0.0311 233.4)',
-  paper: 'oklch(0.8032 0.0161 67.6)',
+  black: 'oklch(0.15 0.05 250)',
+  white: 'oklch(0.98 0.01 85)',
+  gray: 'oklch(0.4 0.02 240)',
+  green: 'oklch(0.55 0.12 200)',
+  gray90: 'oklch(0.92 0.01 80)',
+  sage: 'oklch(0.65 0.08 220)',
+  slate: 'oklch(0.35 0.04 245)',
+  paper: 'oklch(0.85 0.015 75)',
 } as const
 
 const themeNames = ['light', 'dark'] as const
@@ -16,12 +16,12 @@ const themes = {
   light: {
     primary: colors.paper,
     secondary: colors.black,
-    contrast: colors.gray,
+    contrast: colors.slate,
   },
   dark: {
     primary: colors.black,
     secondary: colors.white,
-    contrast: colors.gray,
+    contrast: colors.slate,
   },
 } as const satisfies Themes
 

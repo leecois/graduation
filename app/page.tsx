@@ -15,28 +15,28 @@ import { useRotateReveal } from '~/hooks/use-rotate-reveal'
 const CONTACT_LINKS = [
   {
     label: 'Đường đến trường',
-    href: 'https://maps.app.goo.gl/aZQVLJVMKvztEe6r5?g_st=ipc',
+    href: 'https://maps.app.goo.gl/jxoCAyYpZ5MSGBM29',
     ariaLabel: 'Mở Google Maps chỉ đường đến buổi lễ',
     borderSecondary: false,
     isExternal: true,
   },
   {
     label: 'Facebook',
-    href: 'https://www.facebook.com/chau.chiky',
+    href: 'https://www.facebook.com/chau.hoang.683503',
     ariaLabel: 'Open Facebook in a new tab',
     borderSecondary: true,
     isExternal: true,
   },
   {
-    label: '091 945 2518',
-    href: 'tel:0919452518',
+    label: '094 767 2825',
+    href: 'tel:0947672825',
     ariaLabel: 'Gọi cho Châu',
     borderSecondary: true,
     isExternal: false,
   },
 ] as const
 
-const TARGET_DATE = new Date('2025-12-19T09:00:00+07:00')
+const TARGET_DATE = new Date('2025-12-28T09:00:00+07:00')
 
 export default function Home() {
   const [isPreloaderComplete, setIsPreloaderComplete] = useState(false)
@@ -160,7 +160,7 @@ export default function Home() {
             )}
           </div>
         </div>
-        <div className="col-span-full dt:coi-ml-20 coi-ml-0 dt:col-start-4 dt:col-span-5 coi-mt-30 order-1 dt:order-0 text-center">
+        <div className="col-span-full dt:coi-ml-20 coi-ml-0 dt:col-start-4 dt:col-span-5 coi-mt-30 order-1 dt:order-0">
           <div>
             <Image
               src="/SE170317-1.png"
@@ -175,23 +175,33 @@ export default function Home() {
           <div className="relative">
             <RotateRevealText
               as="h2"
-              className="text-secondary coi-pt-30 dt:coi-pt-50 uppercase h1"
+              className="text-secondary coi-pt-30 dt:coi-pt-50 uppercase h1 coi-text-30 dt:coi-text-75"
             >
-              Thứ 6, Ngày 19/12/2025
+              Chủ nhật, Ngày 28/12/2025
             </RotateRevealText>
             <RotateRevealText
               as="h2"
-              className="text-secondary coi-pt-30 dt:coi-pt-45 uppercase h1"
+              className="text-secondary coi-pt-30 dt:coi-pt-45 uppercase h1 coi-text-30 dt:coi-text-75"
             >
+              Từ{' '}
               <span className="bg-contrast text-primary coi-px-12 coi-rounded-10">
-                15:00 - 17:30
+                14:30 - 16:30
               </span>
             </RotateRevealText>
             <RotateRevealText
               as="h2"
-              className="text-secondary coi-pt-30 dt:coi-pt-45 uppercase h1"
+              className="text-secondary coi-pt-30 dt:coi-pt-45 uppercase h1 coi-text-30 dt:coi-text-75"
             >
-              Tại Trường Đại học Tài chính - Marketing
+              Hoặc{' '}
+              <span className="bg-contrast text-primary coi-px-12 coi-rounded-10">
+                sau 18h
+              </span>
+            </RotateRevealText>
+            <RotateRevealText
+              as="h2"
+              className="text-secondary coi-pt-30 dt:coi-pt-45 uppercase h1 -coi-tracking-px coi-text-30 dt:coi-text-75 dt:leading-header-height"
+            >
+              Tại Trường Đại học Giao thông vận tải TP. HCM
             </RotateRevealText>
             <div className="-z-1 absolute top-0 left-0 w-full h-full">
               <div className="w-full coi-h-px bg-contrast/20 coi-mt-70 dt:coi-mt-105 relative" />
@@ -199,13 +209,13 @@ export default function Home() {
               <div className="w-full coi-h-px bg-contrast/20 coi-mt-76 dt:coi-mt-120 relative" />
               <div className="w-full coi-h-px bg-contrast/20 coi-mt-76 dt:coi-mt-120 relative" />
             </div>
-            <h1 className="col-start-1 col-span-4 dt:col-start-1 dt:col-span-6 coi-pt-10 dt:coi-pt-50 coi-mt-30 bg-secondary uppercase coi-text-78 dt:coi-text-160 home-title text-primary relative order-3 dt:order-0 mobile-only">
-              <RotateRevealText>Hà Châu</RotateRevealText>
+            <h1 className="col-start-1 col-span-4 dt:col-start-1 dt:col-span-6 coi-pt-10 dt:coi-pt-50 coi-mt-30 bg-secondary uppercase coi-text-60 dt:coi-text-160 home-title text-primary relative order-3 dt:order-0 mobile-only">
+              <RotateRevealText>Ngọc Châu</RotateRevealText>
             </h1>
           </div>
         </div>
-        <h1 className="col-start-1 col-span-4 dt:col-start-1 dt:col-span-6 coi-pt-10 dt:coi-pt-50 coi-mt-30 bg-secondary uppercase coi-text-73 dt:coi-text-238 home-title text-primary relative order-3 dt:order-0 coi-pl-6 desktop-only">
-          <RotateRevealText>Hà Châu</RotateRevealText>
+        <h1 className="col-start-1 col-span-4 dt:col-start-1 dt:col-span-6 coi-pt-10 dt:coi-pt-50 coi-mt-30 bg-secondary uppercase coi-text-73 dt:coi-text-186 home-title text-primary relative order-3 dt:order-0 coi-pl-6 desktop-only">
+          <RotateRevealText>Ngọc Châu</RotateRevealText>
         </h1>
         <div className="col-span-full dt:col-start-7 dt:col-span-2 coi-mt-20 order-3 dt:order-0 coi-ml-21 dt:coi-ml-0">
           <Image
