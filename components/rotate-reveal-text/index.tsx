@@ -15,7 +15,9 @@ function RotateRevealText<T extends ElementType = 'span'>({
 }: RotateRevealTextProps<T>) {
   const Component = (as ?? 'span') as ElementType
   const baseClass =
-    Component === 'span' ? 'inline-block will-change-transform' : 'will-change-transform'
+    Component === 'span'
+      ? 'inline-block will-change-transform'
+      : 'will-change-transform'
 
   return (
     <Component
@@ -31,4 +33,3 @@ function RotateRevealText<T extends ElementType = 'span'>({
 }
 
 export default RotateRevealText
-
